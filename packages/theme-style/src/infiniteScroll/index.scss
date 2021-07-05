@@ -1,0 +1,24 @@
+@import "../config/var.scss";
+
+
+.#{$namespace}list-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+//无限滚动
+.#{$namespace}marquee {
+  animation: marquee 10s linear infinite;
+}
+.#{$namespace}marquee:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-51%); //这里不是-100%！
+  }
+}
