@@ -3,12 +3,13 @@ import vue from 'rollup-plugin-vue' // plugin-vue将vue结尾的文件变为js
 import scss from 'rollup-plugin-scss' // plugin-scss将scss结尾的变为js
 import dartSass from 'sass'; // 用于支持插件
 import { terser } from "rollup-plugin-terser" // 变丑别人看不懂（压缩后的）
-import {name} from './package.json'
+import { name } from './package.json'
 
 const file = () => `dist/${name}.js`
 
 export default {
   input: 'packages/index.js', // 输入文件
+  resolve: { dedupe: ['vue'] },
   external: ["vue"],
   // 输出，告诉rollup一些重要的信息
   output: {

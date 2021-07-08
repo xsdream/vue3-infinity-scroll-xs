@@ -7,5 +7,10 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 8888,
   },
-  plugins: [vue()]
+  plugins: [vue()],
+  build: {
+    rollupOptions: {
+      external: ['vue']
+    }
+  }
 })

@@ -5,7 +5,7 @@
   ],
   "main": "dist/vue3-infinite-scroll-xs.js",
   "author": "xusheng",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "vue3无缝滚动",
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
-    "vue": "^3.0.5"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^4.1.0",
@@ -36,6 +35,7 @@
     "typescript": "^4.3.2",
     "vite": "^2.3.8",
     "vitepress": "^0.15.6",
-    "vue-tsc": "^0.0.24"
+    "vue-tsc": "^0.0.24",
+    "vue": "^3.0.5"
   }
 }
