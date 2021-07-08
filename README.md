@@ -11,6 +11,8 @@
 ```
   import doron from 'vue3-infinite-scroll-xs'
   app.use(doron)
+  
+  <infiniteScroll></<infiniteScroll>
 ```
 
 ## 引入样式
